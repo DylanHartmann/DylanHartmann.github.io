@@ -1,6 +1,6 @@
 console.log(window.location.href);
 
-const path = window.location.href;
+const path = "https://raw.dylanhartmann.com";
 const information_file = "ShorseInformation";
 var file_name = "WhereShorse";
 
