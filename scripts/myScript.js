@@ -1,6 +1,11 @@
 console.log(window.location.href);
 
-const path = "https://raw.dylanhartmann.com";
+var path = ""
+if (window.location.href == "http://127.0.0.1:5500") {
+    path = window.location.href
+} else {
+    path = "https://raw.dylanhartmann.com";
+}
 const information_file = "ShorseInformation";
 var file_name = "WhereShorse";
 
