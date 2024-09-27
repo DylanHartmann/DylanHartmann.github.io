@@ -1,4 +1,6 @@
-const path = "127.0.0.1:5500";
+console.log(window.location.href);
+
+const path = window.location.href;
 const information_file = "ShorseInformation";
 var file_name = "WhereShorse";
 
@@ -6,7 +8,7 @@ var files = ["Home", "WhereShorse", "WhatShorse", "test"];
 
 // get file information
 function setInformation(location) {
-    var goto_path = "http://"+path+"/"+information_file+"/"+location+".md"
+    var goto_path = path+information_file+"/"+location+".md"
     var element = document.getElementById("zero-md-element");
     element.src = information_file+"/"+location+".md"
     /*
