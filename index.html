@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<head>
+<head lang="en-US">
 	<script
       type="module"
       src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
@@ -14,5 +14,24 @@
 		<ul id="Out-Nav"></ul>
 	</div>
 	<br/>
+	<script>
+		var path = ""
+		if (window.location.href == "http://127.0.0.1:5500") {
+			path = window.location.href
+		} else {
+			path = "https://raw.dylanhartmann.com";
+		}
+		const information_file = "ShorseInformation";
+		var file_name = "WhereShorse";
+
+		var files = ["Home", "WhereShorse", "WhatShorse", "test"];
+
+		// get file information
+		function setInformation(location) {
+			var goto_path = path+information_file+"/"+location+".md"
+			var element = document.getElementById("zero-md-element");
+			element.src = information_file+"/"+location+".md"
+		};
+	</script>
 	<zero-md id="zero-md-element" src="/ShorseInformation/home.md"></zero-md>
 </body>
