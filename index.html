@@ -30,7 +30,7 @@
 		function setInformation(location) {
 			var goto_path = path+information_file+"/"+location+".md"
 			var element = document.getElementById("zero-md-element");
-			element.src = information_file+"/"+location+".md"
+			element.setAttribute("src", information_file+"/"+location+".md");
 		};
 		setInformation("home");
 	</script>
