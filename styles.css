@@ -33,3 +33,20 @@ button:hover {
     margin: 0px;
     background-color:grey;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+
+    background-color:grey;
+}
+
+img {
+    width: 10px !important;
+    height: 10px !important;
+
+}

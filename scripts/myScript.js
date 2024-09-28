@@ -9,7 +9,7 @@ if (window.location.href == "http://127.0.0.1:5500") {
 const information_file = "ShorseInformation";
 var file_name = "WhereShorse";
 
-var files = ["Home", "WhereShorse", "WhatShorse", "test"];
+var files = ["Home", "WhatShorse", "WhereShorse", "Credits"];
 
 // get file information
 function setInformation(location) {
